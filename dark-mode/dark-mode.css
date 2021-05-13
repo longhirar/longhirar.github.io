@@ -1,0 +1,7 @@
+:root {
+  --accent-color: #0079cacc;
+  --bg-primary: #101010;
+  --bg-secondary: #020202;
+  --global-text-color: rgba(255, 255, 255, 0.8);
+  --header-text-color: white;
+}

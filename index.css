@@ -6,6 +6,7 @@
   --bg-primary: #ffffff;
   --bg-secondary: #cccccc;
   --global-text-color: #000000;
+  --header-text-color: #ffffff;
   background: var(--bg-primary);
   transition-delay: 200ms;
 }
@@ -17,7 +18,7 @@
 }
 
 label {
-  color: var(--bg-secondary);
+  color: var(--global-text-color);
 }
 
 hr {
@@ -36,11 +37,16 @@ p {
 }
 
 a {
-  color: var(--bg-primary);
+  color: var(--header-text-color);
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-line: none;
+  text-decoration-style: none;
   padding: 1rem;
 }
 
 .logo {
+  color: var(--header-text-color);
   height: 3rem;
 }
 
@@ -73,7 +79,7 @@ body {
 
   background: var(--accent-color);
 
-  color: var(--bg-primary);
+  color: var(--header-text-color);
 }
 
 .header-content {
@@ -118,6 +124,10 @@ input {
   margin: 0.25rem;
 }
 
+.logo_svg {
+  color: var(--header-text-color);
+}
+
 .small-display-only {
   display: none;
 }
@@ -131,7 +141,11 @@ input {
   margin: 0.1rem;
 }
 
-@media only screen and (max-width: 60rem) {
+@media only screen and (orientation: portrait) {
+  :root {
+    font-size: xx-large;
+  }
+
   .content {
     margin-left: 0rem;
     margin-right: 0rem;
