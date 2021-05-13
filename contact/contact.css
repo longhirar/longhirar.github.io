@@ -1,0 +1,14 @@
+:root {
+  --accent-color: #ff0000cc;
+}
+
+button {
+  background: var(--accent-color);
+  border: var(--accent-color);
+  border-radius: 10px;
+
+  width: 15rem;
+  height: 2rem;
+
+  color: var(--bg-primary);
+}

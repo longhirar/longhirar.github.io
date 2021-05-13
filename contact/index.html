@@ -1,0 +1,46 @@
+<head>
+    <meta charset="utf-8" />
+
+<!-- SweetAlert + jQuery -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="/index.css" />
+    <script defer src="/index.js"></script>
+
+    <link rel="stylesheet" href="contact.css" />
+    <script defer src="contact.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <a href="#" onclick="openMenu()"><img src="/logo.svg" class="logo" /></a>
+            <a class="large-display-only header-link" href="/">HOME</a>
+            <a class="large-display-only header-link" href="/projects">PROJECTS</a>
+            <a class="large-display-only header-link" href="/contact">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Contact Me</h1>
+        <hr>
+        <p>Every message sent here will go straight to me. I usually respond within a week, with no guarantees tho.</p>
+        
+        <div style="display:flex; flex-direction: row; max-width: 100%;">
+            <input id="i_name" type="text" placeholder="Full Name"></input>
+            <input id="i_contact" type="text" placeholder="Form of Contact (preferably Discord Tag or E-Mail)"></input>
+        </div>
+
+        <div style="display: flex;">
+            <textarea class="input" style="height: 12rem; max-width: 100%;" id="i_message" placeholder="Message..."></textarea>
+        </div>
+
+        <div style="display: flex; flex-direction: row; max-width: 100%; align-items: center; justify-content: center;">
+            <a href="#">
+                <button class="submit-button">Send</button>
+            </a>
+        </div>
+
+        <label style="justify-self:center;">Longhirar Copyright (c) 2021 All rights reserved.</label>
+    </div>
+</body>

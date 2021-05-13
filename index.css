@@ -1,0 +1,157 @@
+:root {
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --accent-color: rgba(0, 127, 255, 0.8) /*rgb(236, 113, 236)*/;
+  --bg-primary: #ffffff;
+  --bg-secondary: #cccccc;
+  --global-text-color: #000000;
+  background: var(--bg-primary);
+  transition-delay: 200ms;
+}
+
+.content {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 1rem;
+}
+
+label {
+  color: var(--bg-secondary);
+}
+
+hr {
+  border-color: var(--accent-color);
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0px;
+  color: var(--global-text-color);
+}
+
+p {
+  color: var(--global-text-color);
+}
+
+a {
+  color: var(--bg-primary);
+  padding: 1rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.35rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 1rem;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  position: -webkit-sticky; /* Safari Support */
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+  height: 3.5rem;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+
+  background: var(--accent-color);
+
+  color: var(--bg-primary);
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+input {
+  border-radius: 10px;
+  border-color: var(--accent-color);
+  border-width: 2px;
+
+  -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -goog-ms-box-shadow: 0 0 10px #333333;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+
+  width: 100%;
+  height: 1.5rem;
+  padding: 1rem;
+  margin: 0.25rem;
+}
+
+.input {
+  border-radius: 10px;
+  border-color: var(--accent-color);
+  border-width: 2px;
+
+  -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -goog-ms-box-shadow: 0 0 10px #333333;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+
+  width: 100%;
+  height: 1.5rem;
+  padding: 1rem;
+  margin: 0.25rem;
+}
+
+.small-display-only {
+  display: none;
+}
+
+.menu-item {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 2px;
+  padding: 1rem;
+  margin: 0.1rem;
+}
+
+@media only screen and (max-width: 60rem) {
+  .content {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .header-content {
+    margin-left: 1rem; /* 1 for padding only on sides*/
+    margin-right: 1rem;
+    justify-content: center;
+  }
+
+  .large-display-only {
+    display: none;
+  }
+
+  .small-display-only {
+    display: relative;
+  }
+
+  .logo {
+    justify-self: center;
+  }
+}
