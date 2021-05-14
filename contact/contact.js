@@ -8,8 +8,6 @@ $('.submit-button').on("click", () => {
     })
     console.log('shown loading, concatenating...')
 
-    var webhook_contact_form = "https://discord.com/api/webhooks/842186264282267668/F3eft-mSzU_SnLlJrR6P0CBDtzXr0vOacMGRnZRAkxm6OufUV4_RxTTWEzmXEztpldPZ";
-
     let message = "**Name:** %name%\n**Contact:** %contact%\n\n**Message:** %msg%";
     message = message.replace("%name%", $('#i_name').val().replace('"', '').replace("'", '') );
     message = message.replace("%contact%", $('#i_contact').val().replace('"', '').replace("'", '') );
