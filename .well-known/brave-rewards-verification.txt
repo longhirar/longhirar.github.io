@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: longhirar.github.io
+Token: 5474d9adbbe87a4de212f8596471205eacadd242072358f1417a2b058f138346
