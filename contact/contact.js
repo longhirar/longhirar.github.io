@@ -20,7 +20,7 @@ $('.submit-button').on("click", () => {
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send("msg=".concat(message));
 
-    swal("", "Message Sent!", "success");
+    swal("Message Sent!", "", "success");
 
     console.log('sent;')
 })

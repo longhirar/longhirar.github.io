@@ -2,7 +2,7 @@
   --accent-color: #ff0000cc;
 }
 
-button {
+.submit-button {
   background: var(--accent-color);
   border: var(--accent-color);
   border-radius: 10px;
